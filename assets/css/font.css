@@ -1,1 +1,31 @@
 @charset "utf-8";
+
+@font-face {
+  font-family: "JourneyItself-Regular";
+  src: url("../font/JourneyItself-Regular.woff2") format('woff');
+}
+
+@font-face {
+  font-family: "JourneyItself-Bold";
+  src: url("../font/JourneyItself-Bold.woff2") format('woff');
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("../font/Pretendard-Regular.woff2") format('woff');
+}
+
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("../font/Pretendard-Medium.woff2") format('woff');
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("../font/Pretendard-Bold.woff2") format('woff');
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Bold";
+  src: url("../font/SpoqaHanSansNeo-Bold.woff2") format('woff');
+}
