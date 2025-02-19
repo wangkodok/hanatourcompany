@@ -8,8 +8,9 @@ body, div, ul, li, ol, dl, dt, dd, h1, h2, h3, h4, h5, h6, input, fieldset, figu
 
 /* 폰트 설정 */
 body {
-  font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", "Dotum", "Helvetica", "Apple SD Gothic Neo", serif;
-  letter-spacing: -0.02em;
+	font-size: 16px;
+  font-family: "Pretendard-Regular", "Noto Sans KR", "Malgun Gothic", "Dotum", "Helvetica", "Apple SD Gothic Neo", serif;
+	letter-spacing: -0.02em;
 }
 
 /* 링크 초기화 */
