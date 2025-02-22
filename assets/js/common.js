@@ -24,9 +24,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function updateItemSize() {
       ItemSize = document.querySelector(".search-rankings");  // Recalculate item size
+      position = -ItemSize.offsetHeight; // 현재 높이를 반영하여 위치 업데이트
+      list.style.transform = `translateY(${position}px)`;
     }
 
     function moveUp() {
+      ItemSize = document.querySelector(".search-rankings");
       position = position - ItemSize.offsetHeight; // 아이템 사이즈만큼 위로 이동
       list.style.transform = `translateY(${position}px)`;
 
