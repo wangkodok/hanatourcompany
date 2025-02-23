@@ -59,4 +59,17 @@ window.addEventListener("DOMContentLoaded", () => {
   }
 
   searchRankings();
+
+  // 버튼 클릭 시 영상 재생, 정지
+  const videoPlayer = document.querySelector("#video-player");
+  const video = document.querySelector(".video")
+  videoPlayer.addEventListener("click", function () {
+    if (video.paused || video.ended) {
+      video.play(); // 재생
+      videoPlayer.classList.remove("active");
+    } else {
+      video.pause(); // 정지
+      videoPlayer.classList.add("active");
+    }
+  });
 });

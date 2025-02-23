@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* swiper 스타일 초기화 */
+.swiper-pagination {
+  position: initial;
+  text-align: initial;
+  transition: initial;
+  transform: initial;
+  z-index: initial;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: initial;
+  top: initial;
+  left: initial;
+  width: initial;
+}
+
+.swiper-pagination-bullet {
+  width: initial;
+  height: initial;
+  display: initial;
+  border-radius: initial;
+  background: initial;
+  opacity: initial;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: initial;
+}
+
+/* swiper 커스터마이징 스타일 */
+.sec-visual .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 999px;
+}
+
+.sec-visual .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 8px;
+}
+
+.sec-visual .swiper-pagination-bullet-active {
+  width: 16px;
+  background-color: #fff;
+}

@@ -1,1 +1,50 @@
 @charset "utf-8";
+
+/* visual 스타일 */
+.sec-visual .text-area {
+  color: var(--color-fff);
+}
+
+.sec-visual .text-area h3 {
+  font-size: max(28px, 2.916667vw);
+  font-family: "JourneyItself-Regular";
+}
+
+.sec-visual .text-area p {
+  font-size: max(16px, 1.145833vw);
+  line-height: max(20px, 1.666667vw);
+}
+
+.sec-visual video {
+  object-fit: cover;
+  vertical-align: top;
+}
+
+.sec-visual .video-player {
+  background: url("../image/icon_button_stop.svg") no-repeat center / 24px 24px;
+}
+
+.sec-visual .video-player.active {
+  background-image: url("../image/icon_button_play.svg");
+}
+
+@media (max-width: 1023px) {
+  .sec-visual .text-area h3 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  
+  .sec-visual .text-area p {
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-visual .text-area h3 {
+    font-size: 30px;
+  }
+  
+  .sec-visual .text-area p {
+    line-height: 1.3;
+  }
+}

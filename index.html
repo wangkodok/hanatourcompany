@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/swiper.css">
   <link rel="stylesheet" href="./assets/css/font.css">
   <link rel="stylesheet" href="./assets/css/common.css">
   <link rel="stylesheet" href="./assets/css/layout.css">
@@ -223,8 +225,32 @@
     </header>
 
     <main class="container main">
-      <section>
-        <h2></h2>
+      <section class="sec-visual">
+        <h2 class="blind">하나투어 기업 소개 영상</h2>
+        <div class="swiper swiper-visual mySwiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="text-area">
+                <h3>꿈꾸는 대로, 펼쳐지다</h3>
+                <p>하나투어와 함께라면,<br>새로운 경험과 가능성이 펼쳐집니다.</p>
+              </div>
+              <video class="video" muted="" autoplay="" playsinline="" loop="" src="./assets/image/visual_video.mp4"></video>
+            </li>
+            <li class="swiper-slide">
+              <div class="text-area">
+                <h3>꿈꾸는 대로, 펼쳐지다</h3>
+                <p>하나투어와 함께라면,<br>새로운 경험과 가능성이 펼쳐집니다.</p>
+              </div>
+              <video class="video" muted="" autoplay="" playsinline="" loop="" src="./assets/image/visual_video.mp4"></video>
+            </li>
+          </ul>
+          <div class="video-control">
+            <div class="swiper-pagination video-button"></div>
+            <button id="video-player" class="video-player">
+              <span class="blind">재생 및 정지 버튼</span>
+            </button>
+          </div>
+        </div>
       </section>
       <div class="contents">
         <section>
@@ -238,6 +264,7 @@
     </footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./assets/js/common.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
