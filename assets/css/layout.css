@@ -260,3 +260,466 @@ header .m_global-area {
     bottom: 64px;
   }
 }
+
+/* highlight 레이아웃 */
+.sec-highlight .horizontal-scroll {
+  display: flex;
+}
+
+.sec-highlight .company-info {
+  display: flex;
+  height: 31.2500vw;
+  padding: 0 5.2083vw;
+  margin-top: 3.3333vw;
+}
+
+.sec-highlight .company-info .area {
+  margin-right: 1.8750vw;
+}
+
+.sec-highlight .company-info .mb {
+  margin-bottom: 1.8750vw;
+}
+
+.sec-highlight .company-info .mr {
+  margin-right: 1.8750vw;
+}
+
+.sec-highlight .company-info .wrap {
+  border-radius: 0.6250vw;
+  background-color: #e5e9f1;
+  height: 14.6875vw;
+  padding: 4.2708vw 2.6042vw 0;
+  box-sizing: border-box;
+}
+
+.sec-highlight .company-info .contents-area {
+  border-radius: 0.6250vw;
+  background-color: #e5e9f1;
+  height: 14.6875vw;
+  padding: 4.2708vw 2.6042vw 0;
+  box-sizing: border-box;
+}
+
+.sec-highlight .company-info .text-area {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.sec-highlight .company-info .text-area em {
+  font-size: 1.3021vw;
+  color: #000;
+  font-style: normal;
+}
+
+.sec-highlight .company-info .text-area strong {
+  font-size: 3.7500vw;
+  color: #5e2bb8;
+}
+
+.sec-highlight .company-info .text-area span {
+  font-size: 1.0417vw;
+}
+
+.sec-highlight .brand-2023 img,
+.sec-highlight .ccm img {
+  width: 25.0000vw;
+  height: 31.2500vw;
+  vertical-align: top;
+}
+
+/* 애니메이션 */
+.sec-highlight .brand-2023 figure {
+  perspective: 52.0833vw;
+  background-color: #fff;
+  /* transform-style: preserve-3d; */
+}
+
+/* 애니메이션 */
+.sec-highlight .brand-2023 img {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  /* transform-style: preserve-3d; */
+}
+
+.sec-highlight .financial-analysis .data {
+  display: flex;
+}
+
+.sec-highlight .stats-area .year-area {
+  perspective: 52.0833vw;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+.sec-highlight .stats-area .data-year {
+  position: relative;
+  display: flex;
+  width: 32.5521vw;
+  justify-content: space-between;
+  background-color: #08d1d9;
+}
+
+.sec-highlight .stats-area .data-year {
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+  backface-visibility: hidden;
+}
+
+/* 애니메이션 */
+.sec-highlight .stats-area .data-year.active {
+  transform: rotateX(0);
+  transform-origin: center top;
+}
+
+.sec-highlight .stats-area .data-year::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  bottom: 3.6458vw;
+  transform: translate(0, -50%);
+  width: 0.1042vw;
+  height: 2.9167vw;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.sec-highlight .stats-area .data-year em {
+  color: #106c80;
+}
+
+.sec-highlight .stats-area .data-year strong {
+  color: #fff;
+}
+
+.sec-highlight .stats-area .data-user {
+  width: 16.9271vw;
+}
+
+/* 애니메이션 */
+.sec-highlight .stats-area .animation {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+/* 애니메이션 */
+.sec-highlight .stats-area .animation .data-user {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .metrics-area .data-user {
+  width: 18.2292vw;
+}
+
+/* 애니메이션 */
+.sec-highlight .metrics-area .animation {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+/* 애니메이션 */
+.sec-highlight .metrics-area .animation .data-user {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .metrics-area .data-growth {
+  background: url("../image/highlight_graph.png") no-repeat right 0 / 17.7083vw auto #e5e9f1;
+  width: 31.2500vw;
+}
+
+/* 애니메이션 */
+.sec-highlight .metrics-area .animation .data-growth {
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .user-member {
+  width: 26.0417vw;
+}
+
+/* 애니메이션 */
+.sec-highlight .user-member {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+/* 애니메이션 */
+.sec-highlight .user-member .bg {
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .user-member .bg {
+  background: url("../image/highlight_card.jpg") no-repeat 4.6875vw center / 7.0833vw auto #e5e9f1;
+}
+
+.sec-highlight .user-member .text-area {
+  padding-left: 10.4167vw;
+}
+
+/* 애니메이션 */
+.sec-highlight .growth {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+/* 애니메이션 */
+.sec-highlight .growth .bg {
+  background: url("../image/highlight_since.png") no-repeat center / 23.3333vw auto #D7D8DF;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .esg {
+  width: 33.8542vw;
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+.sec-highlight .esg .bg {
+  background: url("../image/highlight_esg.png") no-repeat center / 23.3333vw auto #e5e9f1;
+}
+
+/* 애니메이션 */
+.sec-highlight .esg .bg {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+}
+
+/* 애니메이션 */
+.sec-highlight .esg .bg.active {
+  transform: rotateY(0);
+}
+
+.sec-highlight .operate {
+  width: 33.8542vw;
+}
+
+.sec-highlight .operate .data-year {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: #6940C3;
+}
+
+/* 애니메이션 */
+.sec-highlight .operate {
+  perspective: 52.0833vw;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+/* 애니메이션 */
+.sec-highlight .operate .data-year {
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+  backface-visibility: hidden;
+}
+
+/* 애니메이션 */
+.sec-highlight .operate .data-year.active {
+  transform: rotateX(0);
+  transform-origin: center top;
+}
+
+.sec-highlight .operate .data-year::after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  bottom: 3.6458vw;
+  transform: translate(0, -50%);
+  width: 0.1042vw;
+  height: 2.9167vw;
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.sec-highlight .operate .data-year em,
+.sec-highlight .operate .data-year strong {
+  color: #fff;
+}
+
+/* 애니메이션 */
+.sec-highlight .ccm figure {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+/* 애니메이션 */
+.sec-highlight .ccm img {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+}
+
+/* 애니메이션 */
+.sec-highlight .ccm img.active {
+  transform: rotate(0);
+}
+
+.sec-highlight .bar {
+  padding-top: 1.8750vw;
+}
+
+.sec-highlight .bar-inner {
+  position: relative;
+  width: 72.9167vw;
+  margin: 0 auto;
+}
+
+.sec-highlight .bar-area {
+  position: relative;
+  width: 90px;
+  height: 2px;
+  background-color: #C1C7CD;
+  border-radius: 999px;
+  margin: 0 auto;
+}
+
+.sec-highlight .bar-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.2500vw;
+  height: 0.1042vw;
+  background-color: #878D96;
+  border-radius: 52.0313vw;
+}
+
+.sec-highlight .bar-inner b {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  font-size: 0.9375vw;
+  font-weight: 500;
+  color: #697077;
+}
+
+@media (max-width: 1023px) {
+  .sec-highlight .company-info {
+    /* width: 2302px; */
+    height: 412px;
+    margin-top: 42px;
+    padding: 0 40px;
+  }
+
+  .sec-highlight .company-info .area {
+    margin-right: 20px;
+  }
+  
+  .sec-highlight .company-info .mb {
+    margin-bottom: 20px;
+  }
+
+  .sec-highlight .company-info .mr {
+    margin-right: 20px;
+  }
+  .sec-highlight .company-info .contents-area {
+    height: 196px;
+    padding: 32px
+  }
+
+  .sec-highlight .company-info .text-area em {
+    font-size: 20px;
+  }
+
+  .sec-highlight .company-info .text-area strong {
+    font-size: 46px;
+  }
+
+  .sec-highlight .company-info .text-area span {
+    font-size: 18px;
+  }
+
+  .sec-highlight .brand-2023 img,
+  .sec-highlight .ccm img {
+    width: 318px;
+    height: 100%;
+  }
+  .sec-highlight .stats-area .data-year {
+    align-items: center;
+    width: 406px;
+  }
+
+  .sec-highlight .stats-area .data-year::after {
+    width: 2px;
+    height: 45px;
+  }
+  
+  .sec-highlight .metrics-area .data-user {
+    display: flex;
+    align-items: center;
+    width: 240px;
+  }
+
+  .sec-highlight .stats-area .data-user {
+    display: flex;
+    align-items: center;
+    width: 240px;
+  }
+
+  .sec-highlight .metrics-area .data-growth {
+    display: flex;
+    align-items: center;
+    width: 406px;
+    background-size: 262px auto;
+  }
+
+  .sec-highlight .user-member {
+    width: 380px;
+  }
+
+  .sec-highlight .user-member .bg {
+    display: flex;
+    align-items: center;
+    background-size: 110px auto;
+  }
+
+  .sec-highlight .user-member .text-area  {
+    padding-left: 50%;
+  }
+
+  .sec-highlight .growth .bg {
+    background-size: calc(100% - 40px);
+  }
+
+  .sec-highlight .esg {
+    width: 460px;
+  }
+
+  .sec-highlight .esg .bg {
+    background-size: calc(100% - 40px);
+  }
+
+  .sec-highlight .operate {
+    width: 460px;
+  }
+
+  .sec-highlight .operate .data-year {
+    align-items: center;
+  }
+
+  .sec-highlight .operate .data-year::after {
+    width: 2px;
+    height: 45px;
+  }
+
+  .sec-highlight .ccm figure {
+    height: 100%;
+  }
+}

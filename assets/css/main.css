@@ -48,3 +48,8 @@
     line-height: 1.3;
   }
 }
+
+/* highlight 스타일 */
+.sec-highlight {
+  overflow: hidden;
+}
