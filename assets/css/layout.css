@@ -286,7 +286,7 @@ header .m_global-area {
 }
 
 .sec-highlight .company-info .wrap {
-  border-radius: 0.6250vw;
+  border-radius: 12px;
   background-color: #e5e9f1;
   height: 14.6875vw;
   padding: 4.2708vw 2.6042vw 0;
@@ -294,7 +294,7 @@ header .m_global-area {
 }
 
 .sec-highlight .company-info .contents-area {
-  border-radius: 0.6250vw;
+  border-radius: 12px;
   background-color: #e5e9f1;
   height: 14.6875vw;
   padding: 4.2708vw 2.6042vw 0;
@@ -572,7 +572,7 @@ header .m_global-area {
 }
 
 .sec-highlight .bar {
-  padding-top: 1.8750vw;
+  padding-top: max(20px, 1.8750vw);
 }
 
 .sec-highlight .bar-inner {
@@ -583,7 +583,7 @@ header .m_global-area {
 
 .sec-highlight .bar-area {
   position: relative;
-  width: 90px;
+  width: max(50px, 4.688vw);
   height: 2px;
   background-color: #C1C7CD;
   border-radius: 999px;
@@ -594,8 +594,8 @@ header .m_global-area {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1.2500vw;
-  height: 0.1042vw;
+  width: max(20px, 1.2500vw);
+  height: 2px;
   background-color: #878D96;
   border-radius: 52.0313vw;
 }
@@ -605,7 +605,7 @@ header .m_global-area {
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
-  font-size: 0.9375vw;
+  font-size: 16px;
   font-weight: 500;
   color: #697077;
 }
@@ -629,6 +629,7 @@ header .m_global-area {
   .sec-highlight .company-info .mr {
     margin-right: 20px;
   }
+
   .sec-highlight .company-info .contents-area {
     height: 196px;
     padding: 32px
@@ -651,6 +652,7 @@ header .m_global-area {
     width: 318px;
     height: 100%;
   }
+
   .sec-highlight .stats-area .data-year {
     align-items: center;
     width: 406px;
@@ -660,7 +662,7 @@ header .m_global-area {
     width: 2px;
     height: 45px;
   }
-  
+
   .sec-highlight .metrics-area .data-user {
     display: flex;
     align-items: center;
