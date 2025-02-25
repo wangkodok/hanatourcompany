@@ -725,3 +725,60 @@ header .m_global-area {
     height: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .sec-highlight .company-info {
+    height: 386px;
+    padding: 0 20px;
+  }
+
+  .sec-highlight .company-info .contents-area {
+    height: 183px;
+  }
+
+  .sec-highlight .company-info .text-area em {
+    font-size: 18px;
+  }
+
+  .sec-highlight .company-info .text-area strong {
+    font-size: 36px;
+  }
+
+  .sec-highlight .company-info .text-area span {
+    font-size: 16px;
+  }
+
+  .sec-highlight .brand-2023 img,
+  .sec-highlight .ccm img {
+    width: 295px;
+    height: 100%;
+  }
+
+  .sec-highlight .stats-area .data-year {
+    width: 364px;
+  }
+
+  .sec-highlight .metrics-area .data-growth {
+    width: 364px;
+  }
+
+  .sec-highlight .user-member {
+    width: 356px;
+  }
+
+  .sec-highlight .esg {
+    width: 430px;
+  }
+
+  .sec-highlight .operate {
+    width: 430px;
+  }
+
+  .sec-highlight .ccm img {
+    width: 318px;
+  }
+
+  .sec-highlight .bar-inner b {
+    font-size: 14px;
+  }
+}
