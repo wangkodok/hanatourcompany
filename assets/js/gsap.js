@@ -11,36 +11,40 @@ window.addEventListener("DOMContentLoaded", function () {
     companyInfo.style.touchAction = "none"; // 터치 이벤트 비활성화
   
     // 드래그 가능한 요소 생성
-    Draggable.create(".company-info", {
-      type: "x",
-      bounds: {
-        minX: -companyInfo.offsetWidth + horizontalScroll.clientWidth, // 패딩만큼 조정
-        maxX: 0
-      },
-      inertia: true,
-      edgeResistance: 0.5,
-  
-      onDrag: function () {
-        // 드래그된 위치를 기반으로 비율 계산
-        const totalDraggableWidth = companyInfo.offsetWidth - horizontalScroll.clientWidth; // 드래그 가능한 총 거리
-  
-        if (this.x > 0) {
-          barElement.style.left = `${0}px`; // left 값 업데이트
-          return; // 오른쪽으로 드래그하려 할 때 드래그 중지
-        }
-  
-        const dragPercent = Math.abs(this.x / totalDraggableWidth); // 드래그된 위치를 비율로 변환
-  
-        // 비율에 따라 barElement의 left 위치를 조정
-        let newLeft = dragPercent * (barArea.clientWidth - barElement.offsetWidth); // bar-area 크기에 따라 위치 계산
-  
-        // barArea의 크기를 벗어나지 않도록 제한
-        newLeft = Math.max(0, Math.min(newLeft, barArea.clientWidth - barElement.offsetWidth));
-  
-        // barElement의 left 값 업데이트
-        barElement.style.left = `${newLeft}px`; // left 값 업데이트
-      },
-    });
+    function updateDraggableBounds() {
+      const minX = -companyInfo.offsetWidth + horizontalScroll.clientWidth;
+      const maxX = 0;
+    
+      // 기존 Draggable 인스턴스 제거 후 다시 생성
+      Draggable.get(companyInfo)?.kill(); // 기존 Draggable 제거
+    
+      Draggable.create(companyInfo, {
+        type: "x",
+        bounds: { minX, maxX },
+        inertia: true,
+        edgeResistance: 0.5,
+        onDrag: function () {
+          const totalDraggableWidth = companyInfo.offsetWidth - horizontalScroll.clientWidth;
+    
+          if (this.x > 0) {
+            barElement.style.left = `0px`;
+            return;
+          }
+    
+          const dragPercent = Math.abs(this.x / totalDraggableWidth);
+          let newLeft = dragPercent * (barArea.clientWidth - barElement.offsetWidth);
+          newLeft = Math.max(0, Math.min(newLeft, barArea.clientWidth - barElement.offsetWidth));
+    
+          barElement.style.left = `${newLeft}px`;
+        },
+      });
+    }
+    
+    // 초기 실행
+    updateDraggableBounds();
+    
+    // 창 크기 변경 시 다시 적용
+    window.addEventListener("resize", updateDraggableBounds);
   
     // 브랜드상
     gsap.to(".sec-highlight .brand-2023 img", {
