@@ -50,3 +50,261 @@
 }
 
 /* highlight 스타일 */
+.sec-highlight .contents-area {
+  border-radius: 12px;
+  background-color: #e5e9f1;
+}
+
+.sec-highlight .text-area em {
+  font-size: 1.3021vw;
+  color: #000;
+  font-style: normal;
+}
+
+.sec-highlight .text-area strong {
+  font-size: 3.7500vw;
+  color: #5e2bb8;
+}
+
+.sec-highlight .text-area span {
+  font-size: 1.0417vw;
+}
+
+.sec-highlight .brand-2023 .img-wrap {
+  perspective: 52.0833vw;
+  background-color: #fff;
+  /* transform-style: preserve-3d; */
+}
+
+.sec-highlight .brand-2023 img {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  /* transform-style: preserve-3d; */
+}
+
+.sec-highlight .stats-area .year-area {
+  perspective: 52.0833vw;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+.sec-highlight .stats-area .data-year {
+  background-color: #08d1d9;
+}
+
+.sec-highlight .stats-area .data-year {
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+  backface-visibility: hidden;
+}
+
+.sec-highlight .stats-area .data-year.active {
+  transform: rotateX(0);
+  transform-origin: center top;
+}
+
+.sec-highlight .stats-area .data-year::after {
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.sec-highlight .stats-area .data-year em {
+  color: #106c80;
+}
+
+.sec-highlight .stats-area .data-year strong {
+  color: #fff;
+}
+
+.sec-highlight .stats-area .animation {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+.sec-highlight .stats-area .animation .data-user {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .metrics-area .animation {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+.sec-highlight .metrics-area .animation .data-user {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .metrics-area .data-growth {
+  background: url("../image/highlight_graph.png") no-repeat right 0 / 17.7083vw auto #e5e9f1;
+}
+
+.sec-highlight .metrics-area .animation .data-growth {
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .user-member {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+.sec-highlight .user-member .card-reverse {
+  transform: rotateX(-180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .user-member .bg {
+  background: url("../image/highlight_card.jpg") no-repeat 32px / 7.0833vw auto #e5e9f1;
+}
+
+.sec-highlight .growth {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+.sec-highlight .growth .bg {
+  background: url("../image/highlight_since.png") no-repeat center / 23.3333vw auto #D7D8DF;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.sec-highlight .esg {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+.sec-highlight .esg .bg {
+  background: url("../image/highlight_esg.png") no-repeat center / 23.3333vw auto #e5e9f1;
+}
+
+.sec-highlight .esg .bg {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+}
+
+.sec-highlight .esg .bg.active {
+  transform: rotateY(0);
+}
+
+.sec-highlight .operate .data-year {
+  background-color: #6940C3;
+}
+
+.sec-highlight .operate {
+  perspective: 52.0833vw;
+  transition: transform 1.2s;
+  transform-style: preserve-3d;
+}
+
+.sec-highlight .operate .data-year {
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+  backface-visibility: hidden;
+}
+
+.sec-highlight .operate .data-year.active {
+  transform: rotateX(0);
+  transform-origin: center top;
+}
+
+.sec-highlight .operate .data-year::after {
+  background-color: #fff;
+  opacity: 0.3;
+}
+
+.sec-highlight .operate .data-year em,
+.sec-highlight .operate .data-year strong {
+  color: #fff;
+}
+
+.sec-highlight .ccm .img-wrap {
+  perspective: 52.0833vw;
+  background-color: #fff;
+}
+
+.sec-highlight .ccm img {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transition-timing-function: linear;
+}
+
+.sec-highlight .ccm img.active {
+  transform: rotate(0);
+}
+
+.sec-highlight .bar-area {
+  background-color: #C1C7CD;
+  border-radius: 999px;
+}
+
+.sec-highlight .bar-element {
+  background-color: #878D96;
+  border-radius: 52.0313vw;
+}
+
+.sec-highlight .bar-inner b {
+  font-size: 16px;
+  font-weight: 500;
+  color: #697077;
+}
+
+@media (max-width: 1023px) {
+  .sec-highlight .text-area em {
+    font-size: 20px;
+  }
+
+  .sec-highlight .text-area strong {
+    font-size: 46px;
+  }
+
+  .sec-highlight .text-area span {
+    font-size: 18px;
+  }
+
+  .sec-highlight .metrics-area .data-growth {
+    background-size: 262px auto;
+  }
+
+  .sec-highlight .user-member .bg {
+    background-size: 110px auto;
+  }
+
+  .sec-highlight .growth .bg {
+    background-size: calc(100% - 40px);
+  }
+
+  .sec-highlight .esg .bg {
+    background-size: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 767px) {
+  .sec-highlight .text-area em {
+    font-size: 18px;
+  }
+
+  .sec-highlight .text-area strong {
+    font-size: 36px;
+  }
+
+  .sec-highlight .text-area span {
+    font-size: 16px;
+  }
+
+  .sec-highlight .bar-inner b {
+    font-size: 14px;
+  }
+}
