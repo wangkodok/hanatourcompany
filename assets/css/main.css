@@ -50,6 +50,10 @@
 }
 
 /* highlight 스타일 */
+.sec-highlight {
+  overflow: hidden;
+}
+
 .sec-highlight .contents-area {
   border-radius: 12px;
   background-color: #e5e9f1;
