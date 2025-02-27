@@ -529,3 +529,132 @@ header .m_global-area {
     width: 318px;
   }
 }
+
+/* business 레이아웃 */
+.sec-business .list {
+  width: 66.667vw;
+  margin: 0 auto;
+}
+
+.sec-business .item {
+  width: calc((100% / 3) - 20px);
+  margin: 0 30px 0 0;
+}
+
+.sec-business .item:last-child {
+  margin: 0;
+}
+
+.sec-business .item .animation {
+  position: relative;
+  height: 26.042vw;
+}
+
+.sec-business .item-obverse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sec-business .item-obverse strong {
+  position: absolute;
+  top: 1.875vw;
+  left: 1.875vw;
+}
+
+.sec-business .item-obverse img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.sec-business .item-verso {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: max(18px, 1.875vw);
+}
+
+.sec-business .item-verso dfn {
+  display: block;
+  margin: 0 0 max(16px, 1.042vw) 0;
+}
+
+.sec-business .item-verso .link-more.white::after {
+  left: max(80px, 5.208vw);
+}
+
+@media screen and (max-width: 1023px) {
+  .sec-business .list {
+    width: 752px;
+  }
+
+  .sec-business .item {
+    width: calc((100% / 3) - 10px);
+    margin: 0 15px 0 0;
+  }
+
+  .sec-business .item .animation {
+    height: 344px;
+  }
+
+  .sec-business .item-obverse {
+    width: 100%;
+    height: 160px;
+  }
+
+  .sec-business .item-obverse strong {
+    top: 20px;
+    left: 20px;
+  }
+
+  .sec-business .item-obverse img {
+    height: initial;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  .sec-business .item-verso {
+    position: absolute;
+    top: initial;
+    left: initial;
+    bottom: 0;
+    height: 184px;
+    padding: 20px;
+  }
+
+  .sec-business .item-verso dfn {
+    display: none;
+  }
+
+  .sec-business .item-verso .link-more.white::after {
+    left: 70px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: 782px) {
+  .sec-business .title-area {
+    margin-bottom: 42px;
+  }
+
+  .sec-business .title-area p {
+    margin-bottom: 6px;
+  }
+
+  .sec-business .list {
+    width: 100%;
+  }
+
+  .sec-business .item-obverse img {
+    height: 160px;
+  }
+}
