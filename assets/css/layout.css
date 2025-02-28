@@ -658,3 +658,130 @@ header .m_global-area {
     height: 160px;
   }
 }
+
+/* global 레이아웃 */
+.sec-global .global-wrap {
+  position: relative;
+}
+
+.sec-global .text-wrap {
+  position: absolute;
+  right: 10.938vw;
+  bottom: 10.938vw;
+  z-index: 1;
+}
+
+.sec-global .text-wrap .link-more {
+  padding: 0 36px 0 0;
+}
+
+.sec-global .title-area {
+  text-align: left;
+  margin-bottom: 1.563vw;
+}
+
+.sec-global .count-list {
+  display: flex;
+  margin-top: max(21.12px, 2.0833333333vw);
+}
+
+.sec-global .count-item {
+  width: max(89.1px, 8.7890625vw);
+  margin: 0 10px 0 0;
+  padding: 1.042vw;
+  box-sizing: border-box;
+}
+
+.sec-global .count-item:last-child {
+  margin: 0;
+}
+
+.sec-global .count-area {
+  display: flex;
+}
+
+.sec-global .global-coordinate {
+  position: relative;
+}
+
+.sec-global .global-coordinate img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .sec-global .text-wrap {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    text-align: center;
+  }
+
+  .sec-global .title-area {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+
+  .sec-global .link-more {
+    text-align: center;
+  }
+
+  .sec-global .count-list {
+    display: flex;
+    justify-content: center;
+    margin-top: max(20px, 2.0833333333vw);
+  }
+
+  .sec-global .count-item {
+    width: 158px;
+    padding: 20px;
+    margin: 0 10px 0 0;
+  }
+
+  .sec-global .count-item .count-area {
+    display: flex;
+  }
+
+  .sec-global .count-item .count-text {
+    display: block;
+    text-align: left;
+  }
+
+  .sec-global .global-coordinate {
+    padding: 0 26px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec-global {
+    height: 440px;
+  }
+
+  .sec-global .inner {
+    padding: 0;
+  }
+
+  .sec-global .count-list {
+    flex-wrap: wrap;
+  }
+
+  .sec-global .count-item {
+    width: calc((100% / 2) - 20px);
+    margin: 0 6px 6px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+  }
+
+  .sec-global .count-item:nth-child(2n) {
+    margin: 0 0 6px 0;
+  }
+
+  .sec-global .count-item .count-text {
+    display: block;
+    text-align: left;
+  }
+
+  .sec-global .global-coordinate {
+    padding: 0 12px;
+  }
+}
