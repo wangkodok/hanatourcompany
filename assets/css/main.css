@@ -486,3 +486,34 @@
     font-size: 14px;
   }
 }
+
+/* esg 스타일 */
+.sec-esg .title-area h3,
+.sec-esg .title-area p,
+.sec-esg .title-area .link-more {
+  color: var(--color-fff);
+}
+
+.sec-esg .desc-area p,
+.sec-esg .swiper-control-text button {
+  font-family: "Pretendard-Regular";
+  font-weight: normal;
+}
+
+.sec-esg .title-area p {
+  font-size: max(29.04px, 2.8645833333vw);
+}
+
+.sec-esg .desc-area p {
+
+  font-size: max(11.88px, 1.171875vw);
+}
+
+.sec-esg .item img {
+  object-fit: cover;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 1023px) {
+
+}

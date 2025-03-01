@@ -1,6 +1,15 @@
 @charset "utf-8";
 
 /* swiper 스타일 초기화 */
+.swiper {
+  margin-left: initial;
+  margin-right: initial;
+  list-style: initial;
+  padding: initial;
+  z-index: initial;
+  display: inherit;
+}
+
 .swiper-pagination {
   position: initial;
   text-align: initial;
@@ -31,6 +40,21 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: initial;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: initial;
+  top: initial;
+  width: initial;
+  height: initial;
+  margin-top: initial;
+  z-index: initial;
+  cursor: initial;
+  display: initial;
+  align-items: initial;
+  justify-content: initial;
+  color: initial;
 }
 
 /* swiper 커스터마이징 스타일 */
@@ -89,5 +113,129 @@
 @media screen and (min-width: 783px) {
   .sec-business .swiper-pagination {
       display: none;
+  }
+}
+
+.sec-esg .swiper-esg-control-image .list .item {
+  position: relative;
+}
+
+.sec-esg .swiper-control-text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sec-esg .swiper-control-text .list {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sec-esg .swiper-control-text .item button {
+  position: relative;
+  width: 100%;
+  height: max(52.8px, 5.2083333333vw);
+  font-size: max(13.2px, 1.3020833333vw);
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background-color: transparent;
+}
+
+.sec-esg .swiper-control-text .item button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.sec-esg .swiper-control-text .item:last-child button::after {
+  content: none;
+}
+
+.sec-esg .swiper-control-text .swiper-slide-thumb-active .time-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: max(52.8px, 5.2083333333vw);
+  background: rgba(0, 0, 0, 0.2);
+  animation-name: countingBar;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes countingBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.sec-esg .swiper-control-text .swiper-button-next,
+.sec-esg .swiper-control-text .swiper-button-prev {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .sec-esg .swiper-control-text .item button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sec-esg .swiper-control-text .list {
+    border: none;
+  }
+
+  .sec-esg .swiper-control-text .item button::after {
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+  }
+
+  .sec-esg .swiper-control-text .item:last-child button::after {
+    content: "";
+  }
+
+  .sec-esg .swiper-control-text .swiper-button-next,
+  .sec-esg .swiper-control-text .swiper-button-prev {
+    position: absolute;
+    top: 0;
+    right: initial;
+    bottom: initial;
+    left: initial;
+    width: 48px;
+    height: 100%;
+    margin-top: initial;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: initial;
+  }
+
+  .sec-esg .swiper-control-text .swiper-button-next {
+    right: 0;
+  }
+
+  .sec-esg .swiper-control-text .swiper-button-prev {
+    left: 0;
+  }
+
+  .sec-esg .swiper-control-text .swiper-button-next:after,
+  .sec-esg .swiper-control-text .swiper-button-prev:after {
+    font-size: 24px;
+    color: #fff;
   }
 }

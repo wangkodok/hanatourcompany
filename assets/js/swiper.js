@@ -43,5 +43,33 @@ window.addEventListener("load", () => {
   
     // 화면 크기 변경 시 Swiper 초기화
     window.addEventListener("resize", initSwiper);
+
+    const swiperEsgControlText = new Swiper(".swiper-control-text", {
+      loop: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
+          allowTouchMove: true,
+          noSwiping: false,
+          simulateTouch: true,
+        }
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    const swiperEsgControlImage = new Swiper(".swiper-esg-control-image", {
+      spaceBetween: 0,
+      effect: "fade",
+      thumbs: {
+        swiper: swiperEsgControlText,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false
+      },
+    });
   });
   
