@@ -517,3 +517,147 @@
 @media screen and (max-width: 1023px) {
 
 }
+
+/* people 스타일 */
+.sec-people {
+  background-color: #f2f4f8;
+}
+
+.sec-people .people-contents .people {
+  overflow: hidden;
+}
+
+.sec-people .people-contents .people,
+.sec-people .people-contents .area {
+  border-radius: 0.625vw;
+}
+
+.sec-people .people-contents .interview,
+.sec-people .people-contents .bgc {
+  transition: border 0.5s ease;
+  border: 1px solid transparent;
+}
+
+.sec-people .people-contents .interview:hover,
+.sec-people .people-contents .bgc:hover {
+  border: 1px solid #5e2bb8;
+}
+
+.sec-people .text-area em {
+  font-size: max(8.58px, 0.8463541667vw);
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 999px;
+  background-color: #fff;
+}
+
+.sec-people .people .link-more.black::after,
+.sec-people .area .link-more.black::after,
+.sec-people .area .link-more.white::after {
+  background-size: 0.416667vw;
+}
+
+.sec-people .people {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec-people .people .link-more {
+  color: #fff;
+  padding: max(15.84px, 1.5625vw) max(21.12px, 2.0833333333vw) max(18.48px, 1.8229166667vw);
+  background-color: rgba(81, 81, 81, 0.25);
+  backdrop-filter: blur(max(7.92px, 0.78125vw));
+}
+
+.sec-people .people em {
+  color: #5e2bb8;
+}
+
+.sec-people .people dl {
+  font-size: max(9.24px, 0.9114583333vw);
+}
+
+.sec-people .people dt {
+  border-right: 1px solid #fff;
+}
+
+.sec-people .people .desc {
+  font-size: max(18.48px, 1.8229166667vw);
+  font-weight: 700;
+  font-family: "Pretendard-Bold";
+}
+
+.sec-people .interview {
+  background-color: #08d1d9;
+}
+
+.sec-people .interview .text-area p {
+  color: #fff;
+  font-size: max(15.84px, 1.5625vw);
+}
+
+.sec-people .bgc {
+  background-color: #fff;
+}
+
+.sec-people .area dt {
+  font-size: max(15.84px, 1.5625vw);
+  font-family: "JourneyItself-Regular";
+  color: #5e2bb8;
+}
+
+.sec-people .area dd {
+  font-size: max(10.56px, 1.0416666667vw);
+  color: #121619;
+}
+
+@media screen and (max-width: 1023px) {
+  .sec-people .text-area em  {
+    font-size: 14px;  
+    color: #fff;
+    background-color: #5e2bb8;
+  }
+
+  .sec-people .people-contents .people,
+  .sec-people .people-contents .area {
+    border-radius: 12px;
+  }
+
+  .sec-people .people .link-more {
+    backdrop-filter: initial;
+    background-color: #c9cbce;
+  }
+
+  .sec-people .people dl {
+    font-size: 16px;
+  }
+
+  .sec-people .people .desc {
+    font-size: 26px;
+  }
+
+  .sec-people .area dt {
+    font-size: 22px;
+  }
+
+  .sec-people .area dd {
+    font-size: 16px;
+  }
+
+  .sec-people .people .link-more.black::after,
+  .sec-people .area .link-more.black::after,
+  .sec-people .area .link-more.white::after {
+    background-size: auto;
+  }
+
+  .sec-people .interview .text-area em {
+    color: #08d1d9;
+    background-color: #fff;
+  }
+  
+  .sec-people .interview .text-area p {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+}

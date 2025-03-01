@@ -825,3 +825,187 @@ header .m_global-area {
     height: 668px;
   }
 }
+
+/* people 레이아웃 */
+.sec-people .inner {
+  width: 73.75vw;
+  padding: 10.41665vw 0.625vw;
+}
+
+.sec-people .people-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.4375vw;
+}
+
+.sec-people .people-contents .area {
+  width: 28.542vw;
+}
+
+.sec-people .people-contents .area + .area {
+  margin-top: max(13.2px, 1.3020833333vw);
+}
+
+.sec-people .text-area em {
+  margin-right: max(6.6px, 0.6510416667vw);
+  padding: max(6.6px, 0.6510416667vw) max(9.24px, 0.9114583333vw);
+}
+
+.sec-people .link-more {
+  display: block;
+  box-sizing: border-box;
+}
+
+.sec-people .area .link-more::after {
+  width: 1.5625vw;
+  height: 1.5625vw;
+  right: 2.083333vw;
+  bottom: 1.041667vw;
+  top: initial;
+}
+
+.sec-people .people {
+  position: relative;
+  width: 43.75vw;
+}
+
+.sec-people .people .link-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sec-people .people .link-more::after {
+  width: 1.5625vw;
+  height: 1.5625vw;
+  right: 2.604167vw;
+  bottom: 1.25vw;
+  top: initial;
+}
+
+.sec-people .people .text-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sec-people .people dl {
+  display: flex;
+}
+
+.sec-people .people dt {
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.sec-people .interview .link-more {
+  padding: max(23.76px, 2.34375vw) max(21.12px, 2.0833333333vw) max(24.42px, 2.4088541667vw);
+}
+
+.sec-people .interview .text-area {
+  text-align: left;
+}
+
+.sec-people .interview .text-area em {
+  display: inline-block;
+  margin-bottom: max(4.62px, 0.4557291667vw);
+}
+
+.sec-people .area .link-more {
+  padding: max(21.12px, 2.0833333333vw);
+}
+
+.sec-people .area dt {
+  margin-bottom: max(2.64px, 0.2604166667vw);
+}
+
+.sec-people .area br.d {
+  display: block;
+}
+
+.sec-people .area br.t {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .sec-people .area br.d {
+    display: none;
+  }
+  
+  .sec-people .area br.t {
+    display: block;
+  }
+
+  .sec-people .inner {
+    width: 90.518084vw;
+  }
+
+  .sec-people .area .link-more {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .sec-people .text-area em  {
+    margin-right: 6px;
+    padding: 8px 10px;
+  }
+
+  .sec-people .people-contents .area {
+    width: 44.379277vw;  
+  }
+
+  .sec-people .people {
+    width: 44.379277vw;
+  }
+
+  .sec-people .people .link-more {
+    padding: 28px 20px 39px;
+  }
+
+  .sec-people .people .desc {
+    padding-right: 110px;
+  }
+
+  .sec-people .area .link-more {
+    padding: 28px 20px;
+  }
+
+  .sec-people .area .link-more::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sec-people .people .link-more::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sec-people .interview .text-area em {
+    margin-bottom: 7px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sec-people .people-contents {
+    display: block;
+  }
+
+  .sec-people .people {
+    width: 100%;
+    height: 394px;
+    margin-bottom: max(13.2px, 1.3020833333vw);
+  }
+
+  .sec-people .people-contents .area {
+    width: 100%;
+  }
+
+  .sec-people .area br.t {
+    display: none;
+  }
+
+  .sec-people .area br.d {
+    display: block;
+  }
+}
