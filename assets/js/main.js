@@ -1,4 +1,6 @@
 window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+    
   const swiperVisual = new Swiper(".swiper-visual", {
     speed: 0,
     allowTouchMove: false,

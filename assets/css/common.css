@@ -6,6 +6,16 @@
   --brand-color: #5e2bb8;
 }
 
+body {
+  visibility: hidden;
+  overflow: hidden;
+}
+
+body.loaded {
+  visibility: visible;
+  overflow: visible;
+}
+
 /* 헤더 스타일 */
 header .logo-link {
   background: url("../image/logo_white_ver.svg") no-repeat center / 100% auto;
