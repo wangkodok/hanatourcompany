@@ -318,3 +318,346 @@ main .link-more.black::after {
     word-wrap: break-word;
   }
 }
+
+/* 푸터 스타일 */
+footer .line {
+  height: 5px;
+  background: linear-gradient(90deg, rgb(94, 43, 184) 0%, rgb(8, 209, 217) 100%);
+}
+
+footer .inner {
+  width: 88.645833vw;
+  margin: 0 auto;
+  padding: 80px 0 40px;
+}
+
+footer .footer-info,
+footer .hanatour-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-info .logo {
+  display: block;
+  width: max(75.24px, 7.421875vw);
+  height: max(14.52px, 1.4322916667vw);
+  background: url("../image/logo.svg") no-repeat 0 0 / 100%;
+}
+
+footer .footer-info .title {
+  display: block;
+  margin-top: max(7.92px, 0.78125vw);
+  font: max(18.48px, 1.8229166667vw) "JourneyItself-Regular";
+}
+
+footer .site-area {
+  display: flex;
+}
+
+footer .site-list {
+  display: flex;
+}
+
+footer .site-list .item {
+  margin-right: 0.729167vw;
+}
+
+footer .site-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max(31.68px, 3.125vw);
+  padding: 0 max(19.8px, 1.953125vw);
+  border-radius: 999px;
+  color: #5e2bb8;
+  background-color: #eee9f7;
+}
+
+footer .site-list span.dot-com {
+  width: 18px;
+  height: 18px;
+  background: url("../image/icon_button_arrow_more_purple.svg") no-repeat center / 100%;
+}
+
+footer .family-site {
+  position: relative;
+}
+
+footer .family-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max(129.36px, 12.7604166667vw);
+  height: max(31.68px, 3.125vw);
+  padding: 0 max(19.8px, 1.953125vw);
+  font-size: max(14px, 0.833333vw);
+  border-radius: 999px;
+  border: max(0.66px, 0.0651041667vw) solid #DDE1E6;
+  color: #878d96;
+  background-color: #fff;
+}
+
+footer .family-button em {
+  font-style: normal;
+}
+
+footer .family-button .plus {
+  display: block;
+  width: 1.25vw;
+  height: 1.25vw;
+  background: url("../image/icon_family_icon.svg") no-repeat center / 100%;
+}
+
+footer .family-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+footer .hanatour-info {
+  margin-top: max(18.48px, 1.8229166667vw);
+  padding-top: max(18.48px, 1.8229166667vw);
+  border-top: max(0.66px, 0.0651041667vw) solid #DDE1E6;
+}
+
+footer .info-list {
+  margin-bottom: max(5.28px, 0.5208333333vw);
+}
+
+footer .info-list .link {
+  font-size: max(8.58px, 0.8463541667vw);
+  font-weight: 500;
+  color: #121619;
+}
+
+footer address {
+  display: flex;
+  margin-bottom: max(7.92px, 0.78125vw);
+}
+
+footer address dl {
+  display: flex;
+  margin-right: max(15.84px, 1.5625vw);
+  font-size: 0.833333vw;
+  font-style: normal;
+  color: #878d96;
+}
+
+footer address dt {
+  margin-right: max(7.92px, 0.78125vw);  
+}
+
+footer .copy {
+  color: #878d96;
+}
+
+footer .sns-list {
+  display: flex;
+}
+
+footer .sns-list li {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-right: max(5.28px, 0.5208333333vw);
+}
+
+footer .sns-list a {
+  display: block;
+  width: 1.666667vw;
+  height: 1.666667vw;
+}
+
+footer .sns-list .instagram {
+  background-image: url("../image/icon_sns_instagram_off.svg");
+}
+
+footer .sns-list .instagram:hover {
+  background-image: url("../image/icon_sns_instagram_on.svg");
+}
+
+footer .sns-list .youtube {
+  background-image: url("../image/icon_sns_youtube_off.svg");
+}
+
+footer .sns-list .youtube:hover {
+  background-image: url("../image/icon_sns_youtube_on.svg");
+}
+
+footer .sns-list .blog {
+  background-image: url("../image/icon_sns_blog_off.svg");
+}
+
+footer .sns-list .blog:hover {
+  background-image: url("../image/icon_sns_blog_on.svg");
+}
+
+footer .sns-list .kakao {
+  background-image: url("../image/icon_sns_kakao_off.svg");
+}
+
+footer .sns-list .kakao:hover {
+  background-image: url("../image/icon_sns_kakao_on.svg");
+}
+
+footer .sns-list .facebook {
+  background-image: url("../image/icon_sns_facebook_off.svg");
+}
+
+footer .sns-list .facebook:hover {
+  background-image: url("../image/icon_sns_facebook_on.svg");
+}
+
+footer .sns-list .x-com {
+  background-image: url("../image/icon_sns_xblog_off.svg")
+}
+
+footer .sns-list .x-com:hover {
+  background-image: url("../image/icon_sns_xblog_on.svg")
+}
+
+@media screen and (max-width: 1023px) {
+  footer .footer-info,
+  footer .hanatour-info {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  footer .footer-info .logo {
+    width: 88px;
+    height: 17px;
+  }
+
+  footer .footer-info .title {
+    font-size: 26px;
+  }
+
+  footer .site-area {
+    margin-top: 18px;
+  }
+
+  footer .site-list a,
+  footer .family-button {
+    min-width: 80px;
+    height: 48px;
+    padding: 0 26px;
+  }
+
+  footer .family-site {
+    width: max(96px, 28.093842vw);
+  }
+
+  footer .family-button {
+    width: 100%;
+  }
+
+  footer .info-list {
+    margin-bottom: max(5.28px, 0.5208333333vw);
+  }
+  
+  footer .info-list .link {
+    font-size: max(8.58px, 0.8463541667vw);
+    font-weight: 500;
+    color: #121619;
+  }
+
+  footer .info-list {
+    margin-bottom: 12px;
+  }
+
+  footer .info-list .link {
+    font-size: 14px;
+  }
+
+  footer address {
+    display: flex;
+    margin-bottom: 12px;
+  }
+  
+  footer address dl {
+    display: flex;
+    font-size: 14px;
+    color: #878d96;
+    font-style: normal;
+    margin-right: max(15.84px, 1.5625vw);
+  }
+  
+  footer address dt {
+    margin-right: 12px;
+  }
+  
+  footer .copy {
+    color: #878d96;
+    font-size: 14px;
+  }
+  
+  footer .sns-list {
+    display: flex;
+    margin-top: 16px;
+  }
+  
+  footer .sns-list li {
+    margin-right: 8px;
+  }
+  
+  footer .sns-list a {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer .site-area {
+    flex-direction: column;
+  }
+
+  footer .site-area {
+    width: 100%;
+  }
+
+  footer .site-list a, 
+  footer .family-button {
+    padding: 0;
+  }
+  
+  footer .family-button {
+    padding: 0 20px;
+  }
+
+  footer .site-list {
+    margin-bottom: 12px;
+  }
+
+  footer .site-list .item {
+    width: calc(100% / 3);
+  }
+
+  footer .site-list .item-dot-com {
+    width: 40%;
+  }
+
+  footer .site-list .item:last-child {
+    margin-right: 0;
+  }
+
+  footer .family-site {
+    width: 100%;
+  }
+
+  footer .family-button .plus {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer address {
+    flex-direction: column;
+  }
+
+  footer address dl {
+    margin-bottom: 8px;
+  }
+}
