@@ -17,6 +17,10 @@ body.loaded {
 }
 
 /* 헤더 스타일 */
+header {
+  overflow: visible;
+}
+
 header .logo-link {
   background: url("../image/logo_white_ver.svg") no-repeat center / 100% auto;
 }
@@ -219,7 +223,17 @@ header.active .rankings-item .link {
   color: var(--color-000);
 }
 
+.hamberger-wrap {
+  display: none;
+  /* opacity: 0;/ */
+  visibility: hidden;
+}
+
 @media screen and (max-width: 1023px) {
+  header {
+    overflow: hidden;
+  }
+
   header .m_global-area .search,
   header .m_global-area .menu {
     background: no-repeat center / 28px auto;
@@ -231,6 +245,180 @@ header.active .rankings-item .link {
 
   header .m_global-area .menu {
     background-image: url("../image/icon_m_menu_white.svg");
+  }
+  .hamberger-wrap {
+    display: block;
+  }
+
+  .hamberger-wrap.active {
+    /* display: block; */
+    /* opacity: 1; */
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .hamberger-wrap.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .hamberger-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 375px;
+    background-color: #fff;
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+  }
+
+  .hamberger-wrap.active .hamberger-nav {
+    transform: translateX(0%);
+  }
+
+
+  .hamberger-nav .top-area {
+    position: relative;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dde1e6;
+  }
+
+  .hamberger-nav .top-area .list {
+    display: flex;
+  }
+
+  .hamberger-nav .top-area .item {
+    margin-right: 16px;
+  }
+
+  .hamberger-nav .top-area .item:last-child {
+    margin-right: 0;
+  }
+
+  .hamberger-nav .top-area .btn-text {
+    padding: 0 16px;
+    height: 40px;
+    border: 1px solid #000;
+    border-radius: 999px;
+  }
+
+  .hamberger-nav .top-area .btn-text.kr-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .hamberger-nav .top-area .btn-text .arrow {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../image/icon_kr_arrow.svg") no-repeat center / contain;
+  }
+
+  .hamberger-nav .top-area .btn-text.color {
+    color: #fff;
+    background-color: #5e2bb8;
+    border: 1px solid #5e2bb8;
+  }
+
+  .hamberger-nav .menu-close {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("../image/icon_m_close_btn.svg") no-repeat center / contain;
+  }
+
+  .hamberger-gnbArea {
+    height: calc(100% - 61px);
+    padding: 12px 20px 25px 20px;
+    box-sizing: border-box;
+  }
+
+  .hamberger-gnb .hamberger-gnbitem {
+    overflow: hidden;
+  }
+
+  .hamberger-gnb .gnb-link {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-size: 18px;
+  }
+
+  .hamberger-gnb .gnb-link .text {
+    font-weight: 700;
+  }
+  
+  .hamberger-gnb .gnb-link .arrow {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../image/icon_m_lnb_arrow_open.svg") no-repeat center / contain;
+  }
+  
+  .hamberger-gnb .gnb-link .arrow.active {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../image/icon_m_lnb_arrow_close.svg") no-repeat center / contain;
+  }
+
+  .hamberger-gnbArea .hb-pageLink {
+    position: relative;
+    display: block;
+    margin-top: 32px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #5e2bb8;
+  }
+
+  .hamberger-gnbArea .hb-pageLink::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 999px;
+    background: url("../image/icon_button_arrow_more_black.svg") no-repeat center / 8px 8px #fff;
+  }
+
+  .hamberger-lnbwrap {
+    visibility: hidden;
+    height: 0;
+    transition: all 0.5s ease;
+  }
+  
+  .hamberger-lnb {
+    padding: 11px 0;
+    border-radius: 8px;
+    background-color: #f2f4f8;
+  }
+
+  .hamberger-lnb .lnb-link {
+    display: block;
+    padding: 9px 20px;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    line-height: 1.3125;
   }
 }
 

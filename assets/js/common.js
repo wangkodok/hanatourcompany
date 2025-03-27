@@ -60,6 +60,48 @@ window.addEventListener("DOMContentLoaded", () => {
 
   searchRankings();
 
+  // 모바일에서 햄버거 메뉴 클릭 시 메뉴 열림/닫힘
+  const hambergerWrap = document.querySelector(".hamberger-wrap");
+  const hambergerMenu = document.querySelector("#hambergerMenu");
+  const hambergerMenuClose = document.querySelector("#menu-close");
+  hambergerMenu.addEventListener("click", () => {
+    hambergerWrap.classList.add("active");
+  });
+  
+  hambergerMenuClose.addEventListener("click", () => {
+    hambergerWrap.classList.remove("active");
+  });
+
+  // 모바일에서 GNB 메뉴 클릭 시 메뉴 열림/닫힘
+  function hambergerAccordionList() {
+    const list = document.querySelectorAll(".hamberger-gnbitem");
+  
+    list.forEach((item) => {
+      item.addEventListener("click", () => {
+        const height = item.querySelector(".hamberger-lnb").offsetHeight;
+        const lnbwrap = item.querySelector(".hamberger-lnbwrap");
+        
+        if (lnbwrap.style.visibility === "visible") {
+          item.querySelector(".arrow").classList.remove("active");
+          lnbwrap.style.height = "0px";
+          lnbwrap.style.visibility = "hidden";
+        } else {
+          // 반복문을 사용해서 열렸던 메뉴 클릭하면 닫힘
+          for (let i = 0; i < list.length; i++) {
+            list[i].querySelector(".arrow").classList.remove("active")
+            list[i].querySelector(".hamberger-lnbwrap").style.height = "0px";
+            list[i].querySelector(".hamberger-lnbwrap").style.visibility = "hidden";
+          }
+          lnbwrap.style.height = `${height}px`;
+          lnbwrap.style.visibility = "visible";
+          item.querySelector(".arrow").classList.add("active");
+        };
+      });
+    });
+  };
+  
+  hambergerAccordionList();
+
   // 버튼 클릭 시 영상 재생, 정지
   // const videoPlayer = document.querySelector("#video-player");
   // const video = document.querySelector(".video")
