@@ -58,6 +58,28 @@
 }
 
 /* swiper 커스터마이징 스타일 */
+.sec-visual .swiper-slide .text-area h3 {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+}
+
+.sec-visual .swiper-slide.swiper-slide-active .text-area h3 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sec-visual .swiper-slide .text-area p {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease 0.2s;
+}
+
+.sec-visual .swiper-slide.swiper-slide-active .text-area p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .sec-visual .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
