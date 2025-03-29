@@ -101,8 +101,8 @@
 }
 
 .sec-business .swiper-pagination {
-  position: static;
   display: flex;
+  position: static;
   justify-content: center;
   margin-top: 24px;
 }
@@ -110,9 +110,9 @@
 .sec-business .swiper-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
+  border: 1px solid #878D96;
   margin-right: 8px;
   background-color: #ffffff;
-  border: 1px solid #878D96;
   border-radius: 999px;
   opacity: 1;
   box-sizing: border-box;
@@ -125,9 +125,9 @@
 .sec-business .swiper-pagination .swiper-pagination-bullet-active {
   width: 16px;
   height: 8px;
+  border: 1px solid #5e2bb8;
   border-radius: 999px;
   background-color: #5e2bb8;
-  border: 1px solid #5e2bb8;
   opacity: 1;
   box-sizing: border-box;
 }
@@ -157,20 +157,20 @@
   position: relative;
   width: 100%;
   height: max(52.8px, 5.2083333333vw);
+  color: #fff;
   font-size: max(13.2px, 1.3020833333vw);
   font-weight: 700;
   text-align: center;
-  color: #fff;
   background-color: transparent;
 }
 
 .sec-esg .swiper-control-text .item button::after {
-  content: "";
   position: absolute;
   top: 0;
   right: 0;
   width: 1px;
   height: 100%;
+  content: "";
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -180,8 +180,8 @@
 
 .sec-esg .swiper-control-text .swiper-slide-thumb-active .time-bar {
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
   z-index: -1;
   width: 100%;
   height: max(52.8px, 5.2083333333vw);
@@ -231,20 +231,20 @@
 
   .sec-esg .swiper-control-text .swiper-button-next,
   .sec-esg .swiper-control-text .swiper-button-prev {
+    display: flex;
     position: absolute;
     top: 0;
     right: initial;
     bottom: initial;
     left: initial;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
     width: 48px;
     height: 100%;
-    margin-top: initial;
-    z-index: 1;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: initial;
+    margin-top: initial;
+    cursor: pointer;
   }
 
   .sec-esg .swiper-control-text .swiper-button-next {
@@ -257,7 +257,7 @@
 
   .sec-esg .swiper-control-text .swiper-button-next:after,
   .sec-esg .swiper-control-text .swiper-button-prev:after {
-    font-size: 24px;
     color: #fff;
+    font-size: 24px;
   }
 }

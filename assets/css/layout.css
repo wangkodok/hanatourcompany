@@ -29,8 +29,8 @@ header {
 }
 
 header .inner {
-  position: relative;
   display: flex;
+  position: relative;
   align-items: center;
   padding: 0 max(16px, 2.604167vw);
 }
@@ -53,8 +53,8 @@ header .gnb-list {
 }
 
 header .gnb-item > a {
-  position: relative;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   padding: 0 max(12px, 1.458333vw);
@@ -64,8 +64,8 @@ header .lnb-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1.875vw;
   height: 100%;
+  padding-top: 1.875vw;
   box-sizing: border-box;
 }
 
@@ -75,17 +75,17 @@ header .lnb-item + .lnb-item {
 
 header .global-area {
   display: flex;
-  align-items: center;
   position: absolute;
   top: 50%;
   right: 2.604167vw;
+  align-items: center;
   transform: translate(0, -50%);
 }
 
 header .global-area form {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 9.114583vw;
   height: 100%;
 }
@@ -100,19 +100,19 @@ header .global-area .button-search {
 }
 
 header .rankings-list {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: max(9.24px, 0.9114583333vw);
   width: 5.417vw;
-  overflow: hidden;
 }
 
 header .rankings-item .link {
+  display: -webkit-box;
+  overflow: hidden;
   font-size: max(8.58px, 0.8463541667vw);
   letter-spacing: -0.01em;
   line-height: 3.0769230769;
-  overflow: hidden;
-  display: -webkit-box;
   line-clamp: 1;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
@@ -135,23 +135,23 @@ header .banner {
   top: 100%;
   right: 0;
   left: 0;
-  height: 0;
   z-index: -1;
+  height: 0;
 }
 
 header .banner-area {
-  overflow: hidden;
   visibility: hidden;
-  height: 0;
+  overflow: hidden;
   position: absolute;
   right: 2.604167vw;
   width: 16.666667vw;
+  height: 0;
 }
 
 header .banner a {
   display: block;
-  padding-top: max(18px, 1.875vw);
   height: 100%;
+  padding-top: max(18px, 1.875vw);
   box-sizing: border-box;
 }
 
@@ -161,13 +161,13 @@ header .banner p {
 }
 
 header .banner p::after {
-  content: "";
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(0, -50%);
   width: 1.5625vw;
   height: 1.5625vw;
+  content: "";
+  transform: translate(0, -50%);
 }
 
 /* 헤더 모바일 */
@@ -222,11 +222,11 @@ header .m_global-area {
 }
 
 .sec-visual .video-control {
+  display: flex;
   position: absolute;
   bottom: max(81.84px, 8.0729166667vw);
   left: max(52.8px, 5.2083333333vw);
   z-index: 1;
-  display: flex;
   align-items: center;
 }
 
@@ -245,8 +245,8 @@ header .m_global-area {
   }
 
   .sec-visual .video-control {
-    left: 40px;
     bottom: 64px;
+    left: 40px;
   }
 }
 
@@ -256,8 +256,8 @@ header .m_global-area {
   }
 
   .sec-visual .video-control {
-    left: 20px;
     bottom: 64px;
+    left: 20px;
   }
 }
 
@@ -306,20 +306,20 @@ header .m_global-area {
 }
 
 .sec-highlight .stats-area .data-year {
-  position: relative;
   display: flex;
-  width: 32.5521vw;
+  position: relative;
   justify-content: space-between;
+  width: 32.5521vw;
 }
 
 .sec-highlight .stats-area .data-year::after {
-  content: "";
   position: absolute;
   right: 50%;
   bottom: 3.6458vw;
-  transform: translate(0, -50%);
   width: 0.1042vw;
   height: 2.9167vw;
+  content: "";
+  transform: translate(0, -50%);
 }
 
 .sec-highlight .stats-area .data-user {
@@ -351,20 +351,20 @@ header .m_global-area {
 }
 
 .sec-highlight .operate .data-year {
-  position: relative;
   display: flex;
+  position: relative;
   justify-content: space-between;
 }
 
 
 .sec-highlight .operate .data-year::after {
-  content: "";
   position: absolute;
   right: 50%;
   bottom: 3.6458vw;
-  transform: translate(0, -50%);
   width: 0.1042vw;
   height: 2.9167vw;
+  content: "";
+  transform: translate(0, -50%);
 }
 
 .sec-highlight .bar {
@@ -403,8 +403,8 @@ header .m_global-area {
   .sec-highlight .company-info {
     /* width: 2302px; */
     height: 412px;
-    margin-top: 42px;
     padding: 0 40px;
+    margin-top: 42px;
   }
 
   .sec-highlight .area {
@@ -421,7 +421,7 @@ header .m_global-area {
 
   .sec-highlight .contents-area {
     height: 196px;
-    padding: 32px
+    padding: 32px;
   }
 
   .sec-highlight .brand-2023 img,
@@ -553,8 +553,8 @@ header .m_global-area {
 .sec-business .item-obverse {
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
 }
 
 .sec-business .item-obverse strong {
@@ -570,11 +570,11 @@ header .m_global-area {
 }
 
 .sec-business .item-verso {
+  display: flex;
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
-  display: flex;
+  left: 0;
   flex-direction: column;
   justify-content: space-between;
   padding: max(18px, 1.875vw);
@@ -614,18 +614,18 @@ header .m_global-area {
   }
 
   .sec-business .item-obverse img {
-    height: initial;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     z-index: -1;
+    height: initial;
+    transform: translateY(-50%);
   }
 
   .sec-business .item-verso {
     position: absolute;
     top: initial;
-    left: initial;
     bottom: 0;
+    left: initial;
     height: 184px;
     padding: 20px;
   }
@@ -712,14 +712,14 @@ header .m_global-area {
   .sec-global .text-wrap {
     top: 0;
     right: 0;
-    left: 0;
     bottom: auto;
+    left: 0;
     text-align: center;
   }
 
   .sec-global .title-area {
-    text-align: center;
     margin: 0 0 20px 0;
+    text-align: center;
   }
 
   .sec-global .link-more {
@@ -734,8 +734,8 @@ header .m_global-area {
 
   .sec-global .count-item {
     width: 158px;
-    padding: 20px;
     margin: 0 10px 0 0;
+    padding: 20px;
   }
 
   .sec-global .count-item .count-area {
@@ -847,8 +847,8 @@ header .m_global-area {
 }
 
 .sec-people .text-area em {
-  margin-right: max(6.6px, 0.6510416667vw);
   padding: max(6.6px, 0.6510416667vw) max(9.24px, 0.9114583333vw);
+  margin-right: max(6.6px, 0.6510416667vw);
 }
 
 .sec-people .link-more {
@@ -857,11 +857,11 @@ header .m_global-area {
 }
 
 .sec-people .area .link-more::after {
-  width: 1.5625vw;
-  height: 1.5625vw;
+  top: initial;
   right: 2.083333vw;
   bottom: 1.041667vw;
-  top: initial;
+  width: 1.5625vw;
+  height: 1.5625vw;
 }
 
 .sec-people .people {
@@ -877,11 +877,11 @@ header .m_global-area {
 }
 
 .sec-people .people .link-more::after {
-  width: 1.5625vw;
-  height: 1.5625vw;
+  top: initial;
   right: 2.604167vw;
   bottom: 1.25vw;
-  top: initial;
+  width: 1.5625vw;
+  height: 1.5625vw;
 }
 
 .sec-people .people .text-area {
@@ -947,8 +947,8 @@ header .m_global-area {
   }
 
   .sec-people .text-area em  {
-    margin-right: 6px;
     padding: 8px 10px;
+    margin-right: 6px;
   }
 
   .sec-people .people-contents .area {

@@ -60,14 +60,14 @@
 }
 
 .sec-highlight .text-area em {
-  font-size: 1.3021vw;
   color: #000;
+  font-size: 1.3021vw;
   font-style: normal;
 }
 
 .sec-highlight .text-area strong {
-  font-size: 3.7500vw;
   color: #5e2bb8;
+  font-size: 3.7500vw;
 }
 
 .sec-highlight .text-area span {
@@ -260,9 +260,9 @@
 }
 
 .sec-highlight .bar-inner b {
+  color: #697077;
   font-size: 16px;
   font-weight: 500;
-  color: #697077;
 }
 
 @media (max-width: 1023px) {
@@ -329,10 +329,10 @@
 }
 
 .sec-business .item-obverse strong {
+  color: #fff;
   font-size: max(20px, 1.875vw);
   font-family: "JourneyItself-Regular";
   font-weight: 500;
-  color: #fff;
 }
 
 .sec-business .item-obverse img {
@@ -356,11 +356,11 @@
 }
 
 .sec-business .item-verso dfn {
+  color: #5e2bb8;
   font-size: max(20px, 1.875vw);
   font-weight: 500;
   font-family: "JourneyItself-Regular";
   font-style: normal;
-  color: #5e2bb8;
 }
 
 @media screen and (max-width: 1023px) {
@@ -385,8 +385,8 @@
   }
 
   .sec-business .item-verso p {
-    font-size: 15px;
     color: #343A3F;
+    font-size: 15px;
   }
 
   .sec-business .item-verso .link-more {
@@ -420,14 +420,14 @@
 }
 
 .sec-global .count-item .count-text {
-  font-size: max(9.24px, 0.9114583333vw);
   color: #697077;
+  font-size: max(9.24px, 0.9114583333vw);
 }
 
 .sec-global .count-area .count {
+  color: #5e2bb8;
   font-size: max(26.4px, 2.6041666667vw);
   font-weight: 700;
-  color: #5e2bb8;
 }
 
 .sec-global .global-coordinate img {
@@ -450,9 +450,9 @@
   }
 
   .sec-global .count-item .count {
+    color: #5e2bb8;
     font-size: 36px;
     font-weight: 700;
-    color: #5e2bb8;
   }
 
   .sec-global .count-item .count-area {
@@ -460,8 +460,8 @@
   }
 
   .sec-global .count-item .count-text {
-    font-size: 16px;
     color: #697077;
+    font-size: 16px;
   }
 }
 
@@ -534,8 +534,8 @@
 
 .sec-people .people-contents .interview,
 .sec-people .people-contents .bgc {
-  transition: border 0.5s ease;
   border: 1px solid transparent;
+  transition: border 0.5s ease;
 }
 
 .sec-people .people-contents .interview:hover,
@@ -564,8 +564,8 @@
 }
 
 .sec-people .people .link-more {
-  color: #fff;
   padding: max(15.84px, 1.5625vw) max(21.12px, 2.0833333333vw) max(18.48px, 1.8229166667vw);
+  color: #fff;
   background-color: rgba(81, 81, 81, 0.25);
   backdrop-filter: blur(max(7.92px, 0.78125vw));
 }
@@ -602,20 +602,20 @@
 }
 
 .sec-people .area dt {
+  color: #5e2bb8;
   font-size: max(15.84px, 1.5625vw);
   font-family: "JourneyItself-Regular";
-  color: #5e2bb8;
 }
 
 .sec-people .area dd {
-  font-size: max(10.56px, 1.0416666667vw);
   color: #121619;
+  font-size: max(10.56px, 1.0416666667vw);
 }
 
 @media screen and (max-width: 1023px) {
-  .sec-people .text-area em  {
-    font-size: 14px;  
+  .sec-people .text-area em  {  
     color: #fff;
+    font-size: 14px;
     background-color: #5e2bb8;
   }
 
@@ -674,7 +674,7 @@
 }
 
 .sec-news .item-text em.company {
-  color: #5e2bb8
+  color: #5e2bb8;
 }
 
 .sec-news .item-text em.job {
@@ -682,7 +682,7 @@
 }
 
 .sec-news .item-text em.brand {
-  color: #5e2bb8
+  color: #5e2bb8;
 }
 
 .sec-news .item-text p {
@@ -691,8 +691,8 @@
 }
 
 .sec-news .item-text span {
-  font-size: 0.833333vw;
   color: #878d96;
+  font-size: 0.833333vw;
 }
 
 @media screen and (max-width: 1023px) {
