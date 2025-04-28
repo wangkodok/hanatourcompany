@@ -8,7 +8,6 @@ window.addEventListener("load", () => {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        console.log(index, className);
         return `
           <button class="${className}">
             <span class="blind">슬라이드${index + 1}번</span>
@@ -28,7 +27,6 @@ window.addEventListener("load", () => {
   paginationBullets.forEach((buttonItem) => {
     buttonItem.addEventListener("click", () => {
       if (!buttonItem.classList.contains(buttonActive)) {
-        console.log(buttonItem, "buttonItem");
         visualSlide.forEach((item) => {
           item.querySelector(".video").play();
           videoPlayer.classList.remove("active");
