@@ -348,6 +348,7 @@ header.active .rankings-item .link {
     height: calc(100% - 61px);
     padding: 12px 20px 25px 20px;
     box-sizing: border-box;
+    overflow-y: scroll;
   }
 
   .hamberger-gnb .hamberger-gnbitem {
